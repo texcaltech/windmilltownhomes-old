@@ -15,8 +15,16 @@ handlers:
   static_dir: django/contrib/admin/media
   expiration: '0'
 
-- url: /media
-  static_dir: media/
+- url: /css
+  static_dir: css/
+  expiration: '365d'
+  
+- url: /images
+  static_dir: images/
+  expiration: '365d'
+
+- url: /js
+  static_dir: js/
   expiration: '365d'
 
 - url: /.*

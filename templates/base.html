@@ -2,21 +2,23 @@
 <html>
 	<head>
     	<title>Windmill Townhomes</title>
-    	<link type="text/css" rel="stylesheet" href="/media/main.css" />
+    	<link type="text/css" rel="stylesheet" href="/css/main.css" />
+    	<script type="text/javascript" src="/js/jquery.js"></script>
+    	<script type="text/javascript" src="/js/main.js"></script>
   	</head>
   	<body>
   		<header class="shadow">
-	  		<img src="/media/logo.jpeg" />
-  			<ul>
-  				<li>Floor Plans</li>
-  				<li>Pre-Lease</li>
-  				<li>Location</li>
-  				<li>Pay Rent</li>
-  				<li>Maintenance</li>
-  				<li>Contact</li>
+	  		<a href="/"><img src="/images/logo.jpeg" /></a>
+  			<ul id="tabs">
+  				<li><a href="/floor-plans/">Floor Plans</a></li>
+  				<li><a href="/pre-lease/">Pre-Lease</a></li>
+  				<li><a href="/location/">Location</a></li>
+  				<li><a href="/pay-rent/">Pay Rent</a></li>
+  				<li><a href="/maintenance/">Maintenance</a></li>
+  				<li><a href="/contact/">Contact</a></li>
   			</ul>		
   		</header>
-  		<section>
+  		<section class="main">
   			{% block content %}
 			{% endblock %}
   		</section>

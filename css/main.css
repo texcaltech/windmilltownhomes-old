@@ -1,0 +1,272 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mix-ins */
+
+.shadow {
+	-moz-box-shadow: 0px 3px 4px rgb(110, 110, 110);
+	-webkit-box-shadow: 0px 3px 4px rgb(110, 110, 110);
+	box-shadow: 0px 3px 4px rgb(110, 110, 110);
+}
+
+.transparent {
+ 	-webkit-opacity: 0.5;
+  	-moz-opacity: 0.5;
+  	filter:alpha(opacity=50);
+}
+
+.rounded {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.black-text-box {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto 0 auto;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	letter-spacing: 1px;
+	color: white;
+	
+}
+
+.black-text-box a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.black-text-box a:hover {
+	text-decoration: underline;
+}
+
+.bg {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Structure */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	font: normal 13px/140% "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	height: 120px;
+	min-width: 1000px;
+	background: white;
+	overflow: hidden;
+}
+
+header img {
+	height: 115px;
+	float: left;
+	padding: 0 25px 5px 25px;
+	cursor: pointer;
+}
+
+header ul {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+header li {
+	height: 65px;
+	float: left;
+	cursor: pointer;
+}
+
+header li a {
+	display: block;
+	height: 100%;
+	padding: 55px 20px 0 20px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+header li a:hover,
+header li a.selected {
+	background: rgb(224, 215, 206);
+}
+
+.main {
+	padding-top: 120px;
+}
+
+/* Default tab structure */
+
+.default-tab {
+	width: 100%;
+	padding: 60px 0;
+	background: url('/images/canvas.jpg');
+}
+
+/* Home */
+
+.home {
+	padding-top: 60px;
+}
+
+.home .welcome {
+	width: 640px;
+}
+
+.home .welcome .statement {
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.home .welcome .info {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+/* Floor plans */
+
+.floor-plans {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.floor-plans h3 {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.floor-plans .amenities,
+.floor-plans .plans {
+	background: white;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.floor-plans .amenities {
+	/* float: left; */
+	width: 270px;
+	padding-bottom: 0;
+}
+
+.floor-plans .amenities ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.floor-plans .plans {
+	margin-left: 25px;
+	width: 535px;
+	padding-left: 0;
+	padding-bottom: 0
+}
+
+.floor-plans .plans h3 {
+	margin: 0 0 20px 20px;
+}
+
+.floor-plans .plans li {
+	display: inline-block;
+	width: 245px;
+	height: 100px;
+	background: grey;
+	margin: 0 0 20px 20px;
+}
+
+/* Pre-lease */
+
+.pre-lease {
+	padding-top: 60px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.pre-lease .steps ol {
+	list-style-type: decimal;
+	padding-left: 25px;
+	text-align: left;
+}
+
+.pre-lease .steps ol li {
+	padding-bottom: 5px;
+}
+
+.pre-lease .steps .instructions {
+	margin-bottom:5px;
+}
+
+.pre-lease .steps .availability {
+	margin-bottom: 10px;
+	font-style: italic;
+}

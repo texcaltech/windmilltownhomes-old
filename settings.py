@@ -10,7 +10,8 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'guestbook',
+    'django.contrib.admin',
+    'windmilltownhomes',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -22,8 +23,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
 )
-
-LOGIN_REDIRECT_URL = '/guestbook/'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
